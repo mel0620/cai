@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,EACA;EACC,KAAK,EAAE,GAAG",
-"sources": ["../scss/_layout.scss"],
+"mappings": "AAAQ,uFAA+E",
+"sources": ["../scss/pages/_01-variables.scss"],
 "names": [],
 "file": "app.css"
 }
