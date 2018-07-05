@@ -5,12 +5,41 @@
 	@include text-style($great-vibes);
 }
 
+.gv-1
+{
+	@include text-style($great-vibes);
+	font-size: 2rem;
+}
+
 .sac
 {
 	@include text-style($sacramento);
 }
 
+.sac-2
+{
+	@include text-style($sacramento);
+	font-size: 2rem;
+}
+
 .tang
 {
 	@include text-style($tangerine);
+}
+
+.tang-1
+{
+	@include text-style($tangerine);
+	font-size: 2rem;
+}
+
+.tang-n
+{
+	@include text-style($tangerine);
+	font-size: 2.5rem;
+}
+
+.roboto
+{
+	font-family: $roboto;
 }

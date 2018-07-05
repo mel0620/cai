@@ -2,6 +2,64 @@
 
 // PAGE 1
 
+.page-1
+{
+	background-image: url("../img/bg8.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	div
+	{
+		padding: 1rem;
+		background-color: rgba(#eee, 0.8);
+	}
+}
+
 // PAGE 2
+.page-2
+{
+	background-image: url("../img/bg8.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	div
+	{
+		padding: 1rem;
+		background-color: rgba(#eee, 0.8);
+	}
+}
 
 // PAGE 3
+.page-3
+{
+	background-image: url("../img/bg7.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	div
+	{
+		padding: 1rem;
+		background-color: rgba(#000, 0.5);
+
+		@media screen and (max-width: 500px)
+		{
+			.tang-n
+			{
+				font-size: 2rem;
+			}	
+		}
+
+		.picture-nya
+		{
+			background: none;
+			display: none;
+			text-align: center;
+		}
+	}
+}

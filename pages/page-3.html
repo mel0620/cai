@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>2nd Monthsary</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/app.css" rel="stylesheet">
+    <!-- Wow js -->
+    <link href="../css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="page-3 wow fadeIn">
+
+        <div class="flex-center flex-column">
+            <p class="tang-n hide-when-image-show wow fadeInDown text-center text-light" data-wow-delay=".4s">Umpisahan ko sa pinaka umpisa, hinding hindi ko talaga malilimutan yung unang bebes na nakita kita, tila baga tumigil ang mundo ko este ang pag-scroll ko sa facebook nung makita ko ang napaka <small class="roboto">GANDA</small> mong Profilepic <small class="roboto">HAHAHA<img class="wow tada" data-wow-iteration="infinite" src="../assets/emoticons/svg/tongue-out-1.svg" alt="" width="30"></small> kaya nagpapasalamat talaga ako kay pareng mark joke <img class="wow tada" data-wow-iteration="infinite" src="../assets/emoticons/svg/tongue-out-1.svg" alt="" width="30"></small> syempre kay <small class="roboto">LORD</small> sa binigay na pagkakataon ito yung picture mo na nagandahan ako sayo <button style="color: #fff !important" class="btn-reveal btn btn-link roboto text-light">Click mo po</button></p>
+
+            <div class="picture-nya wow tada">
+                <img class="img-fluid" src="../img/profile-nya.JPG" alt="" width="200">
+                <p class="text-center text-light">Tada! Ganda mo talaga sa pic na to, <img class="wow pulse" data-wow-iteration="infinite" src="../assets/emoticons/svg/in-love.svg" alt="" width="15"><br>Crush na kita agad haha <img class="wow tada" data-wow-iteration="infinite" src="../assets/emoticons/svg/tongue-out-1.svg" alt="" width="15"></p>
+
+                <a href="#" class="mt-2 btn-remove-pic btn btn-outline-danger btn-sm wow fadeIn" data-wow-delay="2s"><i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/wow.min.js"></script>
+
+    <script>
+        var custom_js = new custom_js();
+
+        function custom_js()
+        {
+            init();
+
+            function init()
+            {
+                $(document).ready(function() 
+                {
+                    document_ready();   
+                });
+            }
+
+            function document_ready()
+            {
+                $(".btn-reveal").click(function(){
+                    $(".hide-when-image-show").hide();
+                    $(".picture-nya").toggle(400)
+                });
+            }
+        }
+    </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
