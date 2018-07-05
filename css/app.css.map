@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAQ,uFAA+E",
-"sources": ["../scss/pages/_01-variables.scss"],
+"mappings": "AAAQ,uFAA+E;AAA/E,uFAA+E;AAA/E,uFAA+E;ACEvF,GACA;ECDC,WAAW,EFAG,sBAAsB;;ACKrC,IACA;ECNC,WAAW,EFCG,qBAAqB;;ACSpC,KACA;ECXC,WAAW,EFEG,oBAAoB",
+"sources": ["../scss/pages/_01-variables.scss","../scss/pages/_03-text-styles.scss","../scss/pages/_02-mixins.scss"],
 "names": [],
 "file": "app.css"
 }
