@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>CMAPP</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -41,7 +42,7 @@
                     </ul>
                 </li> -->
                 <li>
-                    <a href="javascript:" id="">Home</a>
+                    <a href="javascript:" onclick="load_home()">Home</a>
                 </li>
                 <li class="">
                     <a href="#monthsarySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Monthsary</a>
@@ -57,7 +58,7 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Albums</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="javascript:">All</a>
+                            <a href="javascript:" onclick="load_gallery_all()">All</a>
                         </li>
                         <li>
                             <a href="javascript:">Cai</a>
@@ -106,12 +107,11 @@
             </nav>
 
             <div class="home-landing landing">
-                <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>INTRODUCTION</h2>
+                <p>Pagpasensyahan mo nalang muna ito love haha, hindi pa to fully functional sa ngayon kasi alam mo na mahirap isingit sa sa sched. haha and hindi ko naman pwedeng sabihin sayo na ginagawa ko ito kasi surprise nga lang muna haha.</p>
             </div>
 
-            <div id="pages">
+            <div id="pages" class="pages">
                 
             </div>
             <!-- <div class="line"></div>
@@ -130,38 +130,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $(this).toggleClass('active');
-            });
 
-            // $(".btn-second-month").click(function(){
-              
-            // });
+        var custom_js = new custom_js();
 
-            // $(function(){
-            //   $("#pages").load("../page-1.html"); 
-            // });
-            // $('.btn-page-1').on('click', function () {
-            //     $('#pages').load('../../index.html');
-            // });
+        function custom_js()
+        {
+            init();
 
-            // $(".btn-page-1").click(function(){
-            //    // $("#pages").append("../page-1.html #page-1");
-            //    $("#pages").load("sample.html");
-            //    // $("#pages").load(123)
-            // });
-        });
-    </script>
+            function init()
+            {
+                $(document).ready(function() 
+                {
+                    document_ready();   
+                });
+            }
 
+            function document_ready()
+            {
+                sidebarCollapse();
+            }
 
-    <script>
+            function sidebarCollapse()
+            {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $(this).toggleClass('active');
+                });
+            }
+        }
+
         function load_2ndmonth()
         {
             $(".home-landing").hide('.landing');
+            $("#pages").fadeIn('.page', 400);
             document.getElementById("pages").innerHTML='<object type="text/html" data="../secondMonth/1.html" style="width: 100%; height: 100vh; overflow: hidden;"></object>';
         }
+
+        function load_home()
+        {
+            $("#pages").hide('.page');
+            $(".home-landing").fadeIn('.landing', 400);
+        }
+
     </script>
 </body>
 

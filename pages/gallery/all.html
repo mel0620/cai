@@ -17,18 +17,20 @@
     <link href="../../css/app.css" rel="stylesheet">
     <!-- Wow js -->
     <link href="../../css/animate.css" rel="stylesheet">
+    <!-- LSB -->
+    <link href="../../css/lsb.css" rel="stylesheet">
 </head>
 
-<body class="page-1">
+<body class="all">
 
     <main id="page-1" class="wow fadeIn flex-center flex-column" data-wow-delay=".4s">
-        <div class="text-center p-4">
-           <h1 class="wow jackInTheBox h1-responsive text-center mb-4" data-wow-delay=".6s">HELLO MY LOVE (Cai) <img class="wow pulse" data-wow-delay=".6s" data-wow-iteration="infinite" src="../../assets/emoticons/svg/in-love.svg" alt="" width="45"></h1>
-
-           <p class="wow zoomIn text-center mb-3" data-wow-delay=".8s">I just want to say sorry for what happened on our First Monthsary <img class="wow tada" data-wow-iteration="infinite" src="../../assets/emoticons/svg/tongue-out-1.svg" alt="" width="30"> <br> nawala talaga sa isip ko yung date sa sobrang busy eh sorry dahil nag tampo ka <img class="wow pulse" data-wow-iteration="infinite" src="../../assets/emoticons/svg/happy-1.svg" alt="" width="30"> <br> pero sabi ko naman na babawi ako diba, kaya heto na po sana maapreciate mo ang ginawa ko para sayo. <img class="wow pulse" data-wow-iteration="infinite" src="../../assets/emoticons/svg/happy.svg" alt="" width="30"></p>
-        
-            <a href="2.html" class="btn btn-danger wow fadeIn" data-wow-delay="1s">Next <i class="fas fa-long-arrow-alt-right"></i></a>
-            
+        <div class="container">
+            <a href="../../img/gallery/1.jpg" class="lsb-preview" data-lsb-group="gallery1"> 
+              <img src="../../img/gallery/1.jpg" alt="Image Title"> 
+            </a>
+            <a href="../../img/gallery/IMG_5716.JPG" class="lsb-preview" data-lsb-group="gallery1"> 
+              <img src="../../img/gallery/IMG_5716.JPG" alt="Image Title" width="150"> 
+            </a>
         </div>
     </main>
 
@@ -42,9 +44,36 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
+    <script type="text/javascript" src="../../js/lsb.min.js"></script>
 
+    <script> 
+      $(window).load(function() { 
+        $.fn.lightspeedBox(); 
+      }); 
+    </script> 
     <script>
         new WOW().init();
+    </script>
+
+
+    <script>
+
+        // function load_image()
+        // {
+        //     var folder = "../../img/";
+
+        //     $.ajax({
+        //         url : folder,
+        //         success: function (data) {
+        //             $(data).find("a").attr("href", function (i, val) {
+        //                 if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+        //                     $("body").append( "<img src='"+ folder + val +"'>" );
+        //                 } 
+        //             });
+        //         }
+        //     });
+        // }
+
     </script>
 
 </body>
