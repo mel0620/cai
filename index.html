@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Cache-control" content="no-cache">
         <title>CMAPP</title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -58,14 +59,26 @@
             function check(form)/*function to check userid & password*/
             {
                 /*the following code checkes whether the entered userid and password are matching*/
-                if(form.username.value == "caimel" && form.password.value == "caimel12")
+
+                var uname = "caimel";
+                var upass = "caimel12";
+
+                if(form.username.value == uname && form.password.value == upass)
                 {
                     this.close();
                     window.open('pages/sidebar/index.html')/*opens the target page while Id & password matches*/
                 }
-                else
+
+                else if(form.username.value != uname)
                 {
-                    alert("Invalid Username and Password.")/*displays error message*/
+                    alert("Invalid Username.");
+                    document.location.reload();
+                }
+
+                else if(form.password.value != upass)
+                {
+                    alert("Password Incorrect.")/*displays error message*/
+                    document.location.reload();
                 }
             }
         </script>
