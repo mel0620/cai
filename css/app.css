@@ -102,27 +102,21 @@
 .page-1 {
   background-image: url("../img/bg8.jpg");
   height: 100vh;
-  background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
-  .page-1 div {
-    padding: 1rem;
-    background-color: rgba(238, 238, 238, 0.8); }
 
 .page-2 {
   background-image: url("../img/bg8.jpg");
   height: 100vh;
-  background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
-  .page-2 div {
-    padding: 1rem;
-    background-color: rgba(238, 238, 238, 0.8); }
 
 .page-3 {
   background-image: url("../img/bg7.jpg");
   height: 100vh;
-  background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
   .page-3 div {
