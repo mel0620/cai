@@ -32,20 +32,23 @@
 
             <ul class="list-unstyled components">
                 <p>Navigation</p>
-                <li class="">
+                <!-- <li class="">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="javascript:">Home 1</a>
                         </li>
                     </ul>
+                </li> -->
+                <li>
+                    <a href="javascript:" id="">Home</a>
                 </li>
                 <li class="">
                     <a href="#monthsarySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Monthsary</a>
                     <ul class="collapse list-unstyled" id="monthsarySubmenu">
                         <li>
                             <a href="javascript:">1st</a>
-                            <a href="javascript:" onclick="load_sample()" class="btn-second-month">2nd</a>
+                            <a href="javascript:" onclick="load_2ndmonth()" class="btn-second-month">2nd</a>
                         </li>
                     </ul>
                 </li>
@@ -154,10 +157,10 @@
 
 
     <script>
-        function load_sample()
+        function load_2ndmonth()
         {
             $(".home-landing").hide('.landing');
-            document.getElementById("pages").innerHTML='<object type="text/html" data="../page-1.html" style="width: 100%; height: 100vh; overflow: hidden;"></object>';
+            document.getElementById("pages").innerHTML='<object type="text/html" data="../secondMonth/1.html" style="width: 100%; height: 100vh; overflow: hidden;"></object>';
         }
     </script>
 </body>
