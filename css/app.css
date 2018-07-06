@@ -119,15 +119,12 @@
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
-  .page-3 div {
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 500px) {
-      .page-3 div .tang-n {
-        font-size: 2rem; } }
-    .page-3 div .picture-nya {
-      background: none;
-      display: none;
-      text-align: center; }
+  @media screen and (max-width: 500px) {
+    .page-3 div .tang-n {
+      font-size: 2rem; } }
+  .page-3 div .picture-nya {
+    background: none;
+    display: none;
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

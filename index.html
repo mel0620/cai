@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Motmot</title>
+        <title>CMAPP</title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <!-- Bootstrap core CSS -->
@@ -21,11 +21,28 @@
         <div style="height: 100vh">
             <div class="flex-center flex-column p-4">
                 <!-- <a href="pages/page-1.html" class="animated fadeIn btn btn-danger" type="">Click mo to <img src="assets/emoticons/svg/smiling.svg" alt="" width="15"></a> -->
-                <a href="pages/sidebar/index.html" class="animated fadeIn btn btn-danger btn-lg" data-wow-delay=".2s" type="">OPEN</a>
+                <!-- <a href="pages/sidebar/index.html" class="animated fadeIn btn btn-danger btn-lg" data-wow-delay=".2s" type="">OPEN</a> -->
                 <!-- <a href="pages/page-1.html" class="bubbly-button">Click mo po!</a> -->
+                <!-- <form name="login">
+                    Username<input type="text" name="userid"/>
+                    Password<input type="password" name="pswrd"/>
+                    <input type="button" onclick="check(this.form)" value="Login"/>
+                    <input type="reset" value="Cancel"/>
+                </form> -->
+                <form name="login">
+                    <div class="form-group">
+                        <label for="userName">Email address</label>
+                        <input type="text" class="form-control" name="username" id="userName" placeholder="Username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="passWord">Password</label>
+                        <input type="password" class="form-control" name="password" id="passWord" placeholder="Password"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="check(this.form)" value="Login">Submit</button>
+                    <button type="reset" class="btn btn-primary">CANCEL</button>
+                </form>
             </div>
         </div>
-
         <!-- SCRIPTS -->
         <!-- JQuery -->
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -36,31 +53,24 @@
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="js/mdb.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
-
+        
+        <script>
+            function check(form)/*function to check userid & password*/
+            {
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.username.value == "caimel" && form.password.value == "caimel12")
+                {
+                    this.close();
+                    window.open('pages/sidebar/index.html')/*opens the target page while Id & password matches*/
+                }
+                else
+                {
+                    alert("Invalid Username and Password.")/*displays error message*/
+                }
+            }
+        </script>
         <script>
             new WOW().init();
-        </script>
-
-
-
-        <script type="text/javascript" charset="utf-8" async defer>
-            var animateButton = function(e) {
-
-              e.preventDefault;
-              //reset animation
-              e.target.classList.remove('animate');
-              
-              e.target.classList.add('animate');
-              setTimeout(function(){
-                e.target.classList.remove('animate');
-              },700);
-            };
-
-            var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-            for (var i = 0; i < bubblyButtons.length; i++) {
-              bubblyButtons[i].addEventListener('click', animateButton, false);
-            }
         </script>
     </body>
 </html>
