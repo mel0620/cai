@@ -5,10 +5,11 @@
 .page-1
 {
 	background-image: url("../img/bg8.jpg");
-	height: 100vh;
+	height: 100%;
 	background-position: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hiddern;
 
 	// div
 	// {
@@ -21,10 +22,11 @@
 .page-2
 {
 	background-image: url("../img/bg8.jpg");
-	height: 100vh;
+	height: 100%;
 	background-position: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hiddern;
 
 	// div
 	// {
@@ -37,10 +39,11 @@
 .page-3
 {
 	background-image: url("../img/bg7.jpg");
-	height: 100vh;
+	height: 100%;
 	background-position: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hiddern;
 
 	div
 	{
