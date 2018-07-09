@@ -116,12 +116,16 @@
   overflow: hiddern; }
 
 .page-3 {
-  background-image: url("../img/bg7.jpg");
+  background-image: url("../img/bg7-1.jpg");
   height: 100%;
-  background-position: fixed;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hiddern; }
+  /* Scale the background image to be as large as possible */
+  background-size: cover; }
   @media screen and (max-width: 500px) {
     .page-3 div .tang-n {
       font-size: 2rem; } }
@@ -129,5 +133,25 @@
     background: none;
     display: none;
     text-align: center; }
+  .page-3 .next-happened {
+    display: none; }
+  .page-3 .swiper-container {
+    overflow: hidden; }
+  .page-3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
 
 /*# sourceMappingURL=app.css.map */

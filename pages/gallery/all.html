@@ -18,21 +18,50 @@
     <!-- Wow js -->
     <link href="../../css/animate.css" rel="stylesheet">
     <!-- LSB -->
-    <link href="../../css/lsb.css" rel="stylesheet">
+    <!-- <link href="../../css/lsb.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+          body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+    </style>
 </head>
 
 <body class="all">
 
-    <main id="page-1" class="wow fadeIn flex-center flex-column" data-wow-delay=".4s">
-        <div class="container">
-            <a href="../../img/gallery/1.jpg" class="lsb-preview" data-lsb-group="gallery1"> 
-              <img src="../../img/gallery/1.jpg" alt="Image Title"> 
-            </a>
-            <a href="../../img/gallery/IMG_5716.JPG" class="lsb-preview" data-lsb-group="gallery1"> 
-              <img src="../../img/gallery/IMG_5716.JPG" alt="Image Title" width="150"> 
-            </a>
-        </div>
-    </main>
+       <!-- Swiper -->
+       <div class="swiper-container">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide" style="background-image:url(https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-0/s261x260/32743361_1674314122624113_5019705695344263168_n.jpg?_nc_cat=0&oh=3988972cd99ed4f0c924270dfee4c5fa&oe=5BE22FFC"></div>
+           <div class="swiper-slide" style="background-image:url('../../img/gallery/all/2.jpg')"></div>
+           <div class="swiper-slide" style="background-image:url('../../img/gallery/all/1.jpg')"></div>
+           <div class="swiper-slide" style="background-image:url('../../img/gallery/all/IMG_6956.PNG')"></div>
+           <div class="swiper-slide" style="background-image:url(https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-0/p173x172/32937251_1674321625956696_3085521857114275840_n.jpg?_nc_cat=0&oh=f64b38db01fd27cc42dcceb09ee7bee7&oe=5BE1B520"></div>
+           <div class="swiper-slide" style="background-image:url(https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-0/s261x260/32661350_1674318979290294_2508270427101462528_n.jpg?_nc_cat=0&oh=f033eb89ed2059456b5f96d5f1c33780&oe=5BE96A84)"></div>
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+       </div>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -44,7 +73,10 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
-    <script type="text/javascript" src="../../js/lsb.min.js"></script>
+    <!-- <script type="text/javascript" src="../../js/lsb.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 
     <script> 
       $(window).load(function() { 
@@ -54,6 +86,28 @@
     <script>
         new WOW().init();
     </script>
+
+    <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          loop: true,
+          autoplay: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+     </script>
 
 
     <script>

@@ -60,12 +60,12 @@
                         <li>
                             <a href="javascript:" onclick="load_gallery_all()">All</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="javascript:">Cai</a>
                         </li>
                         <li>
                             <a href="javascript:">Mel</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ul>
@@ -98,7 +98,7 @@
             </nav>
 
             <div class="home-landing landing">
-                <h2>INTRODUCTION</h2>
+                <h2>MESSAGE</h2>
                 <p>Pagpasensyahan mo nalang muna ito love haha, hindi pa to fully functional sa ngayon kasi alam mo na mahirap isingit sa sched. haha and hindi ko naman pwedeng sabihin sayo na ginagawa ko ito kasi surprise nga lang muna haha.</p>
             </div>
 
@@ -161,6 +161,13 @@
         {
             $("#pages").hide('.page');
             $(".home-landing").fadeIn('.landing', 400);
+        }
+
+        function load_gallery_all()
+        {
+            $(".home-landing").hide('.landing');
+            $("#pages").fadeIn('.page', 400);
+            document.getElementById("pages").innerHTML='<object type="text/html" data="../gallery/all.html" style="width: 100%; height: 100vh; overflow: hidden;"></object>';
         }
 
     </script>
